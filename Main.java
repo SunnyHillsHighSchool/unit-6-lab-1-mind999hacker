@@ -3,8 +3,8 @@ class Main
   /* Main method for testing */
   public static void main(String[] args) 
   {
-    Picture pic = new Picture("butterfly1.jpg");
-     pic.decreaseBy3();
+    Picture pic = new Picture("butterfly2.jpg");
+     pic.decreaseBy3(3);
     pic.write("output.jpg");
   }
 }

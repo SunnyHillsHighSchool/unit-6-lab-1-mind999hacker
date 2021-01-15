@@ -384,7 +384,7 @@ public void decreaseBlue(double amount)
    }
    }
 
-   public void decreaseBy3() //new method 
+   public void decreaseBy3(int decreaseBy) //new method 
 {
   //put all of the pixals in a Array
   Pixel [] pixels = this.getPixels();
@@ -392,11 +392,11 @@ public void decreaseBlue(double amount)
  for(Pixel x: pixels)
  {
  //get red divide by 3 and set it
- x.setRed(x.getRed()/3);
+ x.setRed(x.getRed()/decreaseBy);
  //get green divide by 3 and set it
- x.setGreen(x.getGreen()/3);
+ x.setGreen(x.getGreen()/decreaseBy);
   //get blue divide by 3 and set it
- x.setBlue(x.getBlue()/3);
+ x.setBlue(x.getBlue()/decreaseBy);
  }
 }
    
