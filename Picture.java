@@ -383,6 +383,22 @@ public void decreaseBlue(double amount)
     p.setBlue((int)(p.getBlue()*amount));
    }
    }
+
+   public void decreaseBy3() //new method 
+{
+  //put all of the pixals in a Array
+  Pixel [] pixels = this.getPixels();
+  //loop through all of the pixels
+ for(Pixel x: pixels)
+ {
+ //get red divide by 3 and set it
+ x.setRed(x.getRed()/3);
+ //get green divide by 3 and set it
+ x.setGreen(x.getGreen()/3);
+  //get blue divide by 3 and set it
+ x.setBlue(x.getBlue()/3);
+ }
+}
    
 /*
 The copper-puzzle.png image is a puzzle -- it shows something famous, however the image has been distored. The true image is in the blue and green values, however all the blue and green values have all be divided by 20, so the values are very small. The red values are all just random numbers, noise added on top to obscure things. Undo these distortions to reveal the true image.

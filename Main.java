@@ -3,10 +3,9 @@ class Main
   /* Main method for testing */
   public static void main(String[] args) 
   {
-    Picture pic = new Picture("beach.jpg");
-     pic.decreaseBlue(.60);
+    Picture pic = new Picture("butterfly1.jpg");
+     pic.decreaseBy3();
     pic.write("output.jpg");
-    //test
   }
 }
 
