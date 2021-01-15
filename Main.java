@@ -6,6 +6,7 @@ class Main
     Picture pic = new Picture("beach.jpg");
      pic.decreaseBlue(.60);
     pic.write("output.jpg");
+    //test
   }
 }
 
